@@ -15,6 +15,11 @@ app.get("/api/users", (request, response) => {
     { id: 3, userName: "ghghehe", displayName: "hduyhd" },
   ]);
 });
+
+app.get("/api/products", (request, response) => {
+  response.send([{ id: 13, name: "gjfhehe", price: 589 }]);
+});
+
 app.listen(PORT, () => {
   console.log(`Running on Port ${PORT}`);
 });
